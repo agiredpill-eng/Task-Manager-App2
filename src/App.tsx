@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Home from './components/Home';
 import Login from './components/Login';
+import Signup from './components/Signup';
 
 type Page = 'home' | 'login' | 'signup' | 'dashboard';
 
@@ -36,7 +37,7 @@ function App() {
       case 'login':
         return <Login onBack={handleBack} />;
       case 'signup':
-        return <div>Signup page coming soon...</div>;
+        return <Signup onBack={handleBack} />;
       case 'dashboard':
         return <div>Dashboard coming soon...</div>;
       default:
